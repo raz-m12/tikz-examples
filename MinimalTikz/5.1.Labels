@@ -1,0 +1,29 @@
+\begin{tikzpicture}
+% Prints the x and y axis, together with the labels
+\draw [thick, <->] (0,1) -- (0,0) -- (1,0);
+\node [below right] at (1,0) {$x$};
+\node [left] at (0,1) {$y$};
+
+% Prints point A
+\draw[fill] (.4,.8) circle [radius=.5pt];
+\node [above right] at (0.4,0.8) {A};
+
+% The previous two blocks can be rewritten as:
+\draw [thick, <->] (-1,2) node [left] {$y$}
+-- (-1,-1) -- (2,-1) node [below right] {$x$};
+% we suppress the \ in \node
+\draw[fill, yellow] (-.5,-.5) rectangle (-0.46,-0.46)
+node[above right] (.4,.6) {$A$};
+
+% Prints text around a point
+\draw[fill] (1,2) circle [radius=0.025];
+\node [below, red] at (1,2) {below};
+\node [above, green] at (1,2) {above};
+\node [left, blue] at (1,2) {left};
+\node [right, yellow] at (1,2) {right};
+
+% Printing new lines
+\node[align=center, below] at (0.5,-1)%
+{This is some text \\ that spans multiple \\ lines};
+
+\end{tikzpicture}
