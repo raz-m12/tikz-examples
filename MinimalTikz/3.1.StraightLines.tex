@@ -1,0 +1,22 @@
+
+\begin{tikzpicture}% [xscale=3,yscale=0.5]
+\draw[help lines] (0,0) grid (2,3);
+
+\draw (0,0) -- (1,2) -- (2,3) -- (1,0);
+
+
+\draw (0,0);
+\draw [dotted, ->] (0,-1.5) -- (2,-1.5);
+\draw [dashed, <-] (0, -0.5) -- (2,-0.5);
+\draw [|->, red] (0,-1) -- (2,-1);
+
+% For thickness can be used:
+% ultra thin, very thin, thin, semithick, thick,
+% very thick and ultra thick.
+\draw [<->, help lines, ultra thick] (-2,4) -- (-2,-3) -- (4,-3);
+\draw [<->, help lines, line width=0.1cm] (-3,4) -- (-3,-4) -- (4,-4);
+
+
+\draw [yellow, line width=6] (3,0) -- (3.5,0);
+\end{tikzpicture} 
+
